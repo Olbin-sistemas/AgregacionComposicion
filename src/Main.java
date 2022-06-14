@@ -21,7 +21,12 @@ public class Main {
             objempleado.setNombre(nombre);
             objempleado.setSueldo(sueldo);
 
+            //objempleado.setNombre("abc");
+
             miEmpresa.Contratar(objempleado);
+
+            objempleado.setNombre("xyz");
+
         }
 
         miEmpresa.mostrarListaEmpleados();
@@ -34,6 +39,8 @@ public class Main {
         objcliente=new Cliente();
         objcliente.setNombre("cliente 2");
         miEmpresa.Agregar_Cliente(objcliente);
+
+        miEmpresa.mostrarListaClientes();
 
 
 
