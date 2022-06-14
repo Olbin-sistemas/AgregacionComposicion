@@ -17,29 +17,32 @@ public class Empresa {
     }
 
     public Empresa(int n) {
-        e=-1;
-        c=-1;
-       empleados=new LinkedList<Empleado>();
-       clientes= new LinkedList<Cliente>();
+        e = -1;
+        c = -1;
+        empleados = new LinkedList<Empleado>();
+        clientes = new LinkedList<Cliente>();
     }
 
-    public void Contratar(Empleado objEmpleado){
+    public void Contratar(Empleado objEmpleado) {
         this.e++;
         empleados.add(objEmpleado);
     }
-    public void Agregar_Cliente(Cliente objcliente){
+
+    public void Agregar_Cliente(Cliente objcliente) {
         this.c++;
         clientes.add(objcliente);
     }
-    public void mostrarListaEmpleados() {
-        int tam=this.empleados.size();
 
-        for(int i=0;i<tam;i++) {
-            System.out.println(this.empleados.get(i).getNombre()+this.empleados.get(i).getSueldo()+"\n");
+    public void mostrarListaEmpleados() {
+        int tam = this.empleados.size();
+
+        for (int i = 0; i < tam; i++) {
+            System.out.println(this.empleados.get(i).getNombre() + "-->" + this.empleados.get(i).getSueldo() + "\n");
         }
+
 
     }
 
-
-
 }
+
+

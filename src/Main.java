@@ -11,15 +11,13 @@ public class Main {
         float sueldo;
         for (int i=1; i<=2; i++){
             Scanner emp= new Scanner(System.in);
-            System.out.println("Nombre del Empleado");
+            System.out.println("Nombre del Empleado:");
             nombre=emp.nextLine();
             System.out.println();
-            System.out.println("Sueldo: ");
+            System.out.println("Sueldo:");
             sueldo=emp.nextFloat();
 
             objempleado=new Empleado();
-
-
             objempleado.setNombre(nombre);
             objempleado.setSueldo(sueldo);
 
@@ -27,6 +25,18 @@ public class Main {
         }
 
         miEmpresa.mostrarListaEmpleados();
+
+        //agregacion--> Los clientes tienen relacion con la empresa
+        Cliente objcliente= new Cliente();
+        objcliente.setNombre("cliente 1");
+        miEmpresa.Agregar_Cliente(objcliente);
+
+        objcliente=new Cliente();
+        objcliente.setNombre("cliente 2");
+        miEmpresa.Agregar_Cliente(objcliente);
+
+
+
 
 
 
