@@ -8,4 +8,5 @@ public class Cliente {
     public void setNombre(String nombre) {
         Nombre = nombre;
     }
+
 }

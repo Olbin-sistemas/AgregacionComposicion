@@ -1,5 +1,4 @@
 import java.util.LinkedList;
-import java.util.List;
 
 public class Empresa {
     private String nombre;
@@ -24,31 +23,28 @@ public class Empresa {
     }
 
     public void Contratar(Empleado objEmpleado) {
-        this.e++;
         empleados.add(objEmpleado);
+        this.e++;
     }
 
     public void Agregar_Cliente(Cliente objcliente) {
-        this.c++;
         clientes.add(objcliente);
+        this.c++;
     }
 
     public void mostrarListaEmpleados() {
         int tam = this.empleados.size();
-
         for (int i = 0; i < tam; i++) {
-            System.out.println(this.empleados.get(i).getNombre() + "-->" + this.empleados.get(i).getSueldo() + "\n");
+            System.out.println(this.empleados.get(i).getNombre()); //"-->" + this.empleados.get(i).getSueldo() + "\n"/);
         }
-
     }
 
     public void mostrarListaClientes() {
         int tam = this.clientes.size();
-
         for (int i = 0; i < tam; i++) {
             System.out.println(this.clientes.get(i).getNombre() +"\n");
         }
-
     }
+
 }
 
