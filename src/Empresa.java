@@ -40,9 +40,15 @@ public class Empresa {
             System.out.println(this.empleados.get(i).getNombre() + "-->" + this.empleados.get(i).getSueldo() + "\n");
         }
 
-
     }
 
-}
+    public void mostrarListaClientes() {
+        int tam = this.clientes.size();
 
+        for (int i = 0; i < tam; i++) {
+            System.out.println(this.clientes.get(i).getNombre() +"\n");
+        }
+
+    }
+}
 
