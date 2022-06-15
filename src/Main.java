@@ -26,12 +26,9 @@ public class Main {
 
             miEmpresa.Contratar(objempleado);
 
-            //objempleado.setNombre("xyz");
+           //objempleado.setNombre("xyz");
         }
         miEmpresa.mostrarListaEmpleados();
-
-
-
 
 
         //agregacion--> Los clientes tienen relacion con la Empresa.
